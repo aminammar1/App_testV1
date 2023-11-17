@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "D:/myapp/app_test/linux",
+    "java.compile.nullAnalysis.mode": "automatic"
+}

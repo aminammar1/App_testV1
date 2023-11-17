@@ -1,0 +1,286 @@
+name: app_test
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.5 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  firebase_auth: ^4.14.0
+  http: 1.1.0
+  google_fonts: ^6.1.0
+  firebase_core: ^2.22.0
+  cloud_firestore: ^4.13.1
+  firebase_analytics: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+  assets:
+    - assets/signup-login-flow/images/back.png
+    - assets/signup-login-flow/images/icon.png
+    - assets/signup-login-flow/images/star-8.png
+    - assets/signup-login-flow/images/social-icon-linkedin.png
+    - assets/signup-login-flow/images/background-primary-bg.png
+    - assets/signup-login-flow/images/background-primary-bg-eoC.png
+    - assets/signup-login-flow/images/back-Bxn.png
+    - assets/signup-login-flow/images/social-icon-mail.png
+    - assets/signup-login-flow/images/background-primary-bg-ZCe.png
+    - assets/signup-login-flow/images/star-8-tQ2.png
+    - assets/signup-login-flow/images/background-primary-bg-yp6.png
+    - assets/signup-login-flow/images/star-8-wV4.png
+    - assets/signup-login-flow/images/delete.png
+    - assets/signup-login-flow/images/star-8-pPt.png
+    - assets/signup-login-flow/images/background-primary-bg-kwU.png
+    - assets/signup-login-flow/images/social-icon-facebook-xSW.png
+    - assets/signup-login-flow/images/toggle-on.png
+    - assets/signup-login-flow/images/social-icon-facebook.png
+    - assets/signup-login-flow/images/background-primary-bg-JUi.png
+    - assets/signup-login-flow/images/background-primary-bg-dFx.png
+    - assets/signup-login-flow/images/background-primary-bg-8DG.png
+    - assets/signup-login-flow/images/star-8-LcA.png
+    - assets/signup-login-flow/images/social-icon-instagram.png
+    - assets/signup-login-flow/images/background-primary-bg-498.png
+    - assets/signup-login-flow/images/star-8-cPt.png
+    - assets/signup-login-flow/images/delete-YNe.png
+    - assets/signup-login-flow/images/social-icon-google.png
+    - assets/signup-login-flow/images/icon-mAi.png
+    - assets/signup-login-flow/images/social-icon-apple.png
+    - assets/signup-login-flow/images/background-primary-bg-Hc6.png
+    - assets/signup-login-flow/images/background-primary-bg-xeW.png
+    - assets/signup-login-flow/images/line-23.png
+    - assets/signup-login-flow/images/icon-XpW.png
+    - assets/signup-login-flow/images/social-icon-facebook-nvn.png
+    - assets/signup-login-flow/images/background-primary-bg-szi.png
+    - assets/signup-login-flow/images/star-8-E8S.png
+    - assets/signup-login-flow/images/.png
+    - assets/signup-login-flow/images/-XCe.png
+    - assets/signup-login-flow/images/delete-Fpe.png
+    - assets/signup-login-flow/images/background-primary-bg-gcS.png
+    - assets/signup-login-flow/images/-7hc.png
+    - assets/signup-login-flow/images/background-primary-bg-mzS.png
+    - assets/signup-login-flow/images/social-icon-facebook-TEz.png
+    - assets/signup-login-flow/images/social-icon-microsoft.png
+    - assets/signup-login-flow/images/social-icon-google-uHL.png
+    - assets/signup-login-flow/images/icon-7uC.png
+    - assets/signup-login-flow/images/background-primary-bg-BfQ.png
+    - assets/signup-login-flow/images/icon-vVp.png
+    - assets/signup-login-flow/images/icon-Gpa.png
+    - assets/signup-login-flow/images/social-icon-dropbox.png
+    - assets/signup-login-flow/images/social-icon-github.png
+    - assets/signup-login-flow/images/background-primary-bg-MMU.png
+    - assets/signup-login-flow/images/icon-iQJ.png
+    - assets/signup-login-flow/images/back-ask.png
+    - assets/signup-login-flow/images/back-zUA.png
+    - assets/signup-login-flow/images/toggle-off.png
+    - assets/signup-login-flow/images/background-primary-bg-ooY.png
+    - assets/signup-login-flow/images/social-icon-google-UVg.png
+    - assets/signup-login-flow/images/background-primary-bg-G4A.png
+    - assets/signup-login-flow/images/background-primary-bg-CtA.png
+    - assets/signup-login-flow/images/illustration.png
+    - assets/signup-login-flow/images/-umt.png
+    - assets/signup-login-flow/images/delete-yog.png
+    - assets/signup-login-flow/images/background-primary-bg-Sga.png
+    - assets/signup-login-flow/images/social-icon-apple-HdC.png
+    - assets/signup-login-flow/images/background-primary-bg-322.png
+    - assets/signup-login-flow/images/image-413.png
+    - assets/signup-login-flow/images/background-primary-bg-PP8.png
+    - assets/signup-login-flow/images/social-icon-google-H78.png
+    - assets/signup-login-flow/images/social-icon-facebook-cv6.png
+    - assets/signup-login-flow/images/icon-odC.png
+    - assets/signup-login-flow/images/background-primary-bg-xFC.png
+    - assets/signup-login-flow/images/image-296.png
+    - assets/signup-login-flow/images/background-primary-bg-55U.png
+    - assets/signup-login-flow/images/image-296-Zs8.png
+    - assets/signup-login-flow/images/background-primary-bg-RUe.png
+    - assets/signup-login-flow/images/icon-NPt.png
+    - assets/signup-login-flow/images/star-8-LLi.png
+    - assets/signup-login-flow/images/background-primary-bg-zSW.png
+    - assets/signup-login-flow/images/icon-9KQ.png
+    - assets/signup-login-flow/images/checkbox-on-.png
+    - assets/signup-login-flow/images/star-8-g6N.png
+    - assets/signup-login-flow/images/background-primary-bg-6xi.png
+    - assets/signup-login-flow/images/background-primary-bg-tu8.png
+    - assets/signup-login-flow/images/star-8-u8N.png
+    - assets/signup-login-flow/images/social-icon-apple-EyG.png
+    - assets/signup-login-flow/images/icon-B9k.png
+    - assets/signup-login-flow/images/background-primary-bg-DeA.png
+    - assets/signup-login-flow/images/back-72i.png
+    - assets/signup-login-flow/images/background-primary-bg-GvW.png
+    - assets/signup-login-flow/images/background-primary-bg-wyL.png
+    - assets/signup-login-flow/images/radio-button-on.png
+    - assets/signup-login-flow/images/back-nNv.png
+    - assets/signup-login-flow/images/social-icon-google-YTt.png
+    - assets/signup-login-flow/images/background-primary-bg-q2z.png
+    - assets/signup-login-flow/images/icon-aAv.png
+    - assets/signup-login-flow/images/social-icon-mail-exJ.png
+    - assets/signup-login-flow/images/social-icon-apple-Gki.png
+    - assets/signup-login-flow/images/checkbox-on--8Jn.png
+    - assets/signup-login-flow/images/star-8-4TL.png
+    - assets/signup-login-flow/images/star-8-cze.png
+    - assets/signup-login-flow/images/group-36678.png
+    - assets/signup-login-flow/images/background-primary-bg-h7Y.png
+    - assets/signup-login-flow/images/star-8-SL2.png
+    - assets/signup-login-flow/images/back-oAa.png
+    - assets/signup-login-flow/images/background-primary-bg-NN6.png
+    - assets/signup-login-flow/images/icon-magnifyingglass.png
+    - assets/signup-login-flow/images/star-8-Der.png
+    - assets/signup-login-flow/images/cards-04.png
+    - assets/signup-login-flow/images/background-primary-bg-cjU.png
+    - assets/signup-login-flow/images/background-primary-bg-GYS.png
+    - assets/signup-login-flow/images/icon-hXp.png
+    - assets/signup-login-flow/images/background-primary-bg-p26.png
+    - assets/signup-login-flow/images/eye-hide.png
+    - assets/signup-login-flow/images/background-primary-bg-RpW.png
+    - assets/signup-login-flow/images/back-mBY.png
+    - assets/signup-login-flow/images/background-primary-bg-xRg.png
+    - assets/signup-login-flow/images/radio-button-on-642.png
+    - assets/signup-login-flow/images/social-icon-microsoft-dTG.png
+    - assets/signup-login-flow/images/back-282.png
+    - assets/signup-login-flow/images/star-8-aQS.png
+    - assets/signup-login-flow/images/background-primary-bg-Qfc.png
+    - assets/signup-login-flow/images/image-346.png
+    - assets/signup-login-flow/images/background-primary-bg-P7Y.png
+    - assets/signup-login-flow/images/toggle-on-F2a.png
+    - assets/signup-login-flow/images/background-primary-bg-YJW.png
+    - assets/signup-login-flow/images/eye-show.png
+    - assets/signup-login-flow/images/back-45p.png
+    - assets/signup-login-flow/images/social-icon-mail-pFt.png
+    - assets/signup-login-flow/images/social-icon-github-r8S.png
+    - assets/signup-login-flow/images/background-primary-bg-BwQ.png
+    - assets/signup-login-flow/images/image-130.png
+    - assets/signup-login-flow/images/social-icon-apple-xjC.png
+    - assets/signup-login-flow/images/checkbox-off-.png
+    - assets/signup-login-flow/images/checkbox-on--oBQ.png
+    - assets/signup-login-flow/images/background-primary-bg-Y8z.png
+    - assets/signup-login-flow/images/checkbox-on--p6W.png
+    - assets/signup-login-flow/images/social-icon-instagram-KB8.png
+    - assets/signup-login-flow/images/social-icon-google-Ucr.png
+    - assets/signup-login-flow/images/social-icon-apple-DqL.png
+    - assets/signup-login-flow/images/toggle-on-aFC.png
+    - assets/cover/images/image-130-t8z.png
+    - assets/signup-login-flow/images/background-primary-bg-et2.png
+    - assets/signup-login-flow/images/social-icon-google-rjC.png
+    - assets/signup-login-flow/images/social-icon-google-9yC.png
+    - assets/cover/images/group-36683.png
+    - assets/cover/images/group-36683-noc.png
+    - assets/cover/images/icon-magnifyingglass-LKL.png
+    - assets/signup-login-flow/images/icon-magnifyingglass-63c.png
+    - assets/signup-login-flow/images/icon-iqg.png
+    - assets/signup-login-flow/images/radio-button-off.png
+    - assets/signup-login-flow/images/delete-BjG.png
+    - assets/cover/images/vector.png
+    - assets/signup-login-flow/images/social-icon-google-JSW.png
+    - assets/cover/images/image-296-xNN.png
+    - assets/cover/images/icons1.png
+    - assets/cover/images/message.png
+    - assets/cover/images/dropbox-logo.png
+    - assets/cover/images/icons1-vP4.png
+    - assets/cover/images/line-23-BJz.png
+    - assets/cover/images/group-36674.png
+    - assets/cover/images/google-logo.png
+    - assets/signup-login-flow/images/illustration-aHp.png
+    - assets/signup-login-flow/images/social-icon-dropbox-hdL.png
+    - assets/cover/images/instagram-logo.png
+    - assets/cover/images/linkedin-logo.png
+    - assets/cover/images/microsoft-logo.png
+    - assets/signup-login-flow/images/social-icon-facebook-UT4.png
+    - assets/signup-login-flow/images/image-412.png
+    - assets/signup-login-flow/images/toggle-off-WTc.png
+    - assets/signup-login-flow/images/social-icon-linkedin-ZCe.png
+    - assets/signup-login-flow/images/-Vc6.png
+    - assets/cover/images/vector-YHQ.png
+    - assets/cover/images/icons1-oFG.png
+    - assets/cover/images/github-logo.png
+    - assets/cover/images/group-36674-hcn.png
+    - assets/cover/images/image-346-MSr.png
+    - assets/cover/images/image-382.png
+    - assets/cover/images/image-413-Cz6.png
+    - assets/signup-login-flow/images/image-233.png
+    - assets/signup-login-flow/images/image-391.png
+    - assets/signup-login-flow/images/image-382-RAi.png
+    - assets/cover/images/icons1-dbp.png
+    - assets/signup-login-flow/images/image-290.png
+    - assets/cover/images/image-290-LWn.png
+    - assets/cover/images/image-391-Tii.png
+    - assets/cover/images/image-412-WFU.png
+    - assets/cover/images/image-233-HXp.png
+    - assets/joker.jpg
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages

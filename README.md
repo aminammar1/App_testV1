@@ -1,2 +1,2 @@
 # App_testV1
-Développement d'une Application Mobile Ecommerce (Largon, Flutter, Firebase)
+Development of a Mobile E-commerce Application (Largon, Flutter, Firebase)
